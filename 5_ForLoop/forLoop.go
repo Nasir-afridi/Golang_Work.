@@ -22,4 +22,9 @@ func main() {
 	for i := 0; i <= 3; i++ {
 		fmt.Println(i)
 	}
+
+	// range : yane ye 4 syy peechy tkk nmbrr print kryga 0, 1, 2, 3.
+	for a := range 4 {
+		fmt.Println(a)
+	}
 }
