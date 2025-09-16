@@ -12,4 +12,8 @@ func main() {
 		i++
 	}
 
+	// infinite loop.
+	for {
+		fmt.Println("hello")
+	}
 }
