@@ -12,4 +12,19 @@ func main() {
 	} else {
 		fmt.Println("person is kid.")
 	}
+
+	// operators
+	role := "admin"
+	hasPermission := true
+
+	if role == "admin" || hasPermission {
+		fmt.Println("Yes")
+	}
+
+	// declaring a variable in if condition. we can use this in else if also.
+	if name := "Nasir"; name == "Nasir" {
+		fmt.Println("Correct")
+	}
+
+	// Go mein ternary operator nahe hai.
 }
