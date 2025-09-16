@@ -12,8 +12,14 @@ func main() {
 		i++
 	}
 
-	// infinite loop.
+	// infinite loop with break example.
 	for {
 		fmt.Println("hello")
+		break // exit after one iteration to avoid unreachable code
+	}
+
+	// Classic for loop yane for loop,
+	for i := 0; i <= 3; i++ {
+		fmt.Println(i)
 	}
 }
