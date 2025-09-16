@@ -30,4 +30,21 @@ func main() {
 		fmt.Println("It's working days.")
 	}
 
+	// type switch
+	whoAmI := func(i interface{}) {
+		switch i.(type) {
+		case int:
+			fmt.Println("its integer")
+		case string:
+			fmt.Println("It's string")
+		case bool:
+			fmt.Println("bool")
+		default:
+			fmt.Println("other")
+		}
+
+	}
+
+	whoAmI(6.444)
+
 }
