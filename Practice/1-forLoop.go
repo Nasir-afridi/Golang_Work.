@@ -1,3 +1,5 @@
+// print the sum of 1 to 10 using for loop.
+
 package main
 
 import "fmt"
