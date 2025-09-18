@@ -50,4 +50,12 @@ func main() {
 	var value1 = make([]int, len(value))
 	copy(value1, value)
 	fmt.Println(value, value1)
+
+	// slice operator
+	// 0 index yane from sy 2 yane to tk k beech mein jtny element hoty hain onko print krty hain yane 1, 3.
+	var Val = []int{1, 3, 4}
+	fmt.Println(Val[0:2])
+	fmt.Println(Val[:2]) // by default 0 sy start hoga yane 1, 3 print kryga
+	fmt.Println(Val[0:]) // end tkk jtny elements hongy on saab ko print kryga
+
 }
