@@ -23,5 +23,31 @@ func main() {
 
 	// initializing the slice.
 	Name := []string{"Nasir", "Ali"}
+	Name[0] = "Khan" // changing the value
 	fmt.Println(Name)
+
+	// ---------------------- Slice Difference ----------------------
+	//
+	// var s []int
+	// - Creates a nil slice
+	// - len = 0, cap = 0, pointer = nil
+	// - Not ready for direct indexing (s[0] panic)
+	// - Memory allocate hogi jab pehli dafa append use karoge
+	// - Common for simple cases
+	//
+	// s := make([]int, length, capacity)
+	// - Creates a ready-to-use slice
+	// - len = user defined, cap = user defined
+	// - Pointer already allocated (not nil)
+	// - Safe for indexing (agar index < len)
+	// - Useful for performance & when size known
+	//
+	// --------------------------------------------------------------
+
+	// copy one slice into another.
+	var value = make([]int, 0, 5)
+	value = append(value, 2)
+	var value1 = make([]int, len(value))
+	copy(value1, value)
+	fmt.Println(value, value1)
 }
