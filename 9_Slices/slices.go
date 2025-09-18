@@ -64,4 +64,8 @@ func main() {
 	// checking two slices are equal or not
 	var Val1 = []int{1, 3, 4}
 	fmt.Println(slices.Equal(Val, Val1))
+
+	// 2d slices
+	var numb = [][]int{{1, 2, 3}, {4, 5, 6}}
+	fmt.Println(numb)
 }
