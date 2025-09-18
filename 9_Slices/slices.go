@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 	// slices : ye fixed size ki nahe hoteen ye dynamic hoteen hain.
@@ -58,4 +61,7 @@ func main() {
 	fmt.Println(Val[:2]) // by default 0 sy start hoga yane 1, 3 print kryga
 	fmt.Println(Val[0:]) // end tkk jtny elements hongy on saab ko print kryga
 
+	// checking two slices are equal or not
+	var Val1 = []int{1, 3, 4}
+	fmt.Println(slices.Equal(Val, Val1))
 }
