@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(nums == nil)
 	fmt.Println(len(nums))
 
-	var Nums = make([]int, 2) // initial size of slice is 2 its not fixed. iski capacity or length automatically resize hojate hai.
+	var Nums = make([]int, 2) // initial length of slice is 2 its not fixed. iski capacity or length automatically resize hojate hai.
 	fmt.Println(cap(Nums))    // capacity -> maximum numbers of elements can fit.
 	Nums = append(Nums, 1)    // adding element in a slice.
 	fmt.Println(Nums)
