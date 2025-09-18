@@ -20,4 +20,8 @@ func main() {
 	Num = append(Num, 2, 3, 4, 5, 6, 5, 3, 5, 6, 3, 11)
 	fmt.Println(Num)
 	fmt.Println(cap(Num))
+
+	// initializing the slice.
+	Name := []string{"Nasir", "Ali"}
+	fmt.Println(Name)
 }
